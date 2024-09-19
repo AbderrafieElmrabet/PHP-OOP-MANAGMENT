@@ -26,45 +26,52 @@ class Passport
 
 //-----------------------------------------------------//
 
-class Auteur {
+class Auteur
+{
     private $id;
     private $nom;
     /** @var Livre[] */
     private $livres = [];
 
-    public function addLivre(Livre $livre): void {
+    public function addLivre(Livre $livre): void
+    {
         $this->livres[] = $livre;
         $livre->setAuteur($this);
     }
 }
 
-class Livre {
+class Livre
+{
     private $id;
     private $titre;
-    private $auteur; 
+    private $auteur;
 }
 
 //-----------------------------------------------------//
 
-class Etudiant {
+class Etudiant
+{
     private $id;
     private $nom;
     /** @var Cours[] */
     private $cours = [];
 
-    public function ajouterCours(Cours $cours): void {
+    public function ajouterCours(Cours $cours): void
+    {
         $this->cours[] = $cours;
         $cours->ajouterEtudiant($this);
     }
 }
 
-class Cours {
+class Cours
+{
     private $id;
     private $nom;
     /** @var Etudiant[] */
     private $etudiants = [];
 
-    public function ajouterEtudiant(Etudiant $etudiant): void {
+    public function ajouterEtudiant(Etudiant $etudiant): void
+    {
         $this->etudiants[] = $etudiant;
     }
 }

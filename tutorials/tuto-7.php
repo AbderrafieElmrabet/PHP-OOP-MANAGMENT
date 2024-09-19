@@ -21,9 +21,9 @@ $livre1->auteurs = [
 
 $json = json_encode($livre1);
 
-file_put_contents('ma_bibliotheque.json', $json);
+file_put_contents('tuto-7.json', $json);
 
-$json = file_get_contents('ma_bibliotheque.json');
+$json = file_get_contents('tuto-7.json');
 
 $livreLu = json_decode($json);
 

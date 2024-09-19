@@ -1,16 +1,20 @@
 <?php
-class CompteBancaire {
+class CompteBancaire
+{
     private $solde;
 
-    public function __construct($soldeInitial) {
+    public function __construct($soldeInitial)
+    {
         $this->solde = $soldeInitial;
     }
 
-    public function getSolde() {
+    public function getSolde()
+    {
         return $this->solde;
     }
 
-    public function deposer($montant) {
+    public function deposer($montant)
+    {
         if ($montant > 0) {
             $this->solde += $montant;
         } else {
@@ -18,7 +22,8 @@ class CompteBancaire {
         }
     }
 
-    public function retirer($montant) {
+    public function retirer($montant)
+    {
         if ($montant <= $this->solde) {
             $this->solde -= $montant;
         } else {

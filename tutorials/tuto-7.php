@@ -27,4 +27,4 @@ $json = file_get_contents('tuto-7.json');
 
 $livreLu = json_decode($json);
 
-echo $livreLu->titre;
+echo $livreLu->auteurs;

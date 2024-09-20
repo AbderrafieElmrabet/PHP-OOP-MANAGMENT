@@ -1,1 +1,10 @@
-{"titre":"Le Petit Prince","isbn":"9782266000016","auteurs":[{"nom":null,"prenom":null}]}
+{
+    "titre": "Le Petit Prince",
+    "isbn": "9782266000016",
+    "auteurs": [
+        {
+            "nom": null,
+            "prenom": null
+        }
+    ]
+}
